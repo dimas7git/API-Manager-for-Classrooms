@@ -1,0 +1,51 @@
+### teste de buscar todos as salas
+GET http://localhost:40000/getAllSalasDeAula HTTP/1.1
+content-type: application/json
+
+{    
+    
+}
+
+### teste de buscar aluno por sala
+POST http://localhost:40000/getSalasDeAulaByID HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NTA3MSwiZXhwIjoxNjkzMzk1NjcxfQ.wfg5FZ_XBCB36gg8eIX-NOEvRDexsFkwdQjkBAyTRFE
+
+{    
+    "salasdeaulaid":2
+}
+
+### teste de inserção de sala
+POST http://localhost:40000/insertSalasDeAula HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NTA3MSwiZXhwIjoxNjkzMzk1NjcxfQ.wfg5FZ_XBCB36gg8eIX-NOEvRDexsFkwdQjkBAyTRFE
+
+{    
+     "salasdeaulaid": 4,
+      "descricao": "Sala 205",
+      "localizacao": "Prédio E",
+      "capacidade": 28,
+      "removido": false
+}
+
+### teste de atualização de sala
+POST http://localhost:40000/updateSalasDeAula HTTP/1.1
+content-type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MzM5NDMzNCwiZXhwIjoxNjkzMzk0OTM0fQ.h_Z43hGacEM-MMaW4OOWLEq3iu4MUtPbx_p3iUunRoo
+
+{    
+   "salasdeaulaid": 5,
+      "descricao": "Sala 222222",
+      "localizacao": "Prédio E",
+      "capacidade": 28,
+      "removido": false
+}
+
+### teste de atualização de sala
+POST http://localhost:40000/deleteSalasDeAula HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InF3ZSIsImlhdCI6MTY5MTQ5MDg3NCwiZXhwIjoxNjkxNDkxNDc0fQ.1ABhMgWYm8gGKy7q90GOPQpNoY5M1LLzpCltKxFjcEo
+
+{    
+    "salasdeaulaid": 5
+}
