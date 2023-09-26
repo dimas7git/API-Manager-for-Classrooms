@@ -37,7 +37,7 @@ Antes de começar, verifique se você atende aos seguintes pré-requisitos:
 
 - **Extensão REST Client**: Recomendamos o uso de uma extensão REST Client para testar suas APIs. Uma extensão popular para Visual Studio Code é o "REST Client". Você pode instalá-lo a partir do [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=humao.rest-client).
 
-## Para executar
+## Instalação
 
 1. Clone o repositório para sua máquina local usando o seguinte comando:
 
@@ -92,7 +92,7 @@ CREATE DATABASE trab_crud;
   VALUES ('Sala 301', 'Prédio B', 40, false);
 ```
 
-## Para executar a API
+## Para executar
 
   1. Abra o Projeto no Visual Studio Code, inicie um terminal e execute o comando:
   
